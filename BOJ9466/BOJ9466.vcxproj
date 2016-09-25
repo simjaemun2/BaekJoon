@@ -142,7 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BOJ5466.cpp" />
+    <ClCompile Include="BOJ9466.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Text.txt" />
