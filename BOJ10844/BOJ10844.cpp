@@ -58,10 +58,8 @@ int main(int argc, char** argv)
 	{
 		cin >> N;
 
-		//cout << dp(N);
+		cout << dp(N);
 	}
-
-	cout << (!0);
 
 	return 0;
 }
