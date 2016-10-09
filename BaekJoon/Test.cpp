@@ -40,7 +40,6 @@ int bNum[1000];
 int bNumCnt;
 
 int ab[1000000];
-int stack[1000000];
 int abCnt;
 
 bool cCache[LEN * 2][MAX_NUM + 1];
@@ -123,58 +122,6 @@ void getABSetAndNum()
 
 }
 
-void swap(int &a, int &b)
-{
-	int temp = a;
-	a = b;
-	b = temp;
-}
-
-int partition(int arr[], int l, int h)
-{
-	int i = l - 1;
-	int x = arr[h];
-
-	for (int j = l; j < h; j++)
-	{
-		if (x > arr[h])
-		{
-			swap(arr[++i], arr[j]);
-		}
-	}
-
-	swap(arr[++i], arr[h]);
-
-	return i;
-}
-
-void qsort(int arr[], int l, int h)
-{
-	int top = -1;
-	stack[++top] = l;
-	stack[++top] = h;
-
-	while (top >= 0)
-	{
-		h = stack[top--];
-		l = stack[top--];
-
-		int p = partition(arr, l, h);
-
-		if (p - 1 > l)
-		{
-			stack[++top] = l;
-			stack[++top] = p - 1;
-		}
-
-		if (p + 1 < h)
-		{
-			stack[++top] = p + 1;
-			stack[++top] = h;
-		}
-	}
-}
-
 void getAmulB()
 {
 	abCnt = 0;
@@ -186,9 +133,6 @@ void getAmulB()
 			ab[abCnt++] = aNum[a] * bNum[b];
 		}
 	}
-
-	//작은 a*b 값부터 C와 비교하기 위해 정렬
-	qsort(ab, 0, abCnt - 1);
 }
 
 void getCSet()
@@ -224,6 +168,8 @@ void getCSet()
 
 int getAnswer()
 {	
+	int ans = 9999999999;
+
 	//a*b 값 중, 작은 값부터 C와 비교
 	for (int i = 0; i < abCnt; i++)
 	{
@@ -240,16 +186,18 @@ int getAnswer()
 			//어떤 자릿수가 cache에 저장된 수가 아닐 때, 반복문 종료
 			if (cCache[j][d] == false)
 				break;
+
+			num /= 10;
 		}
 
 		if (j == -1)
 		{
-			//답
-			return num;
+			if (ab[i] < ans)
+				ans = ab[i];
 		}
 	}
 
-	return -1;
+	return ans;
 }
 
 int main(int argc, char** argv)
