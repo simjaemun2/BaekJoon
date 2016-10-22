@@ -5,12 +5,12 @@
 
 using namespace std;
 
-#define MAX_N 20
+#define MAX_N 100
 #define MAX_M 10000
 #define INF 2000000000
 #define MOD
 
-int N,M;
+int N, M;
 
 int input[MAX_N + 1];
 int cache[MAX_M + 1];
@@ -30,17 +30,16 @@ int main(int argc, char** argv)
 	freopen("Text.txt", "r", stdin);
 #endif
 
-	cin >> T;
+	//cin >> T;
+	T = 1;
 	for (tc = 0; tc < T; tc++)
 	{
-		cin >> N;
+		cin >> N >> M;
 
 		for (int i = 0; i < N; i++)
 		{
 			cin >> input[i];
 		}
-
-		cin >> M;
 
 		memset(cache, 0, sizeof(cache));
 

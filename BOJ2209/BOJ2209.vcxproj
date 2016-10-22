@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{437EBA97-B06D-4CB4-8BD7-8B3511D144A0}</ProjectGuid>
+    <ProjectGuid>{11020527-7917-41B2-903A-F73031D57453}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>BOIJ5557</RootNamespace>
+    <RootNamespace>BOJ2209</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -142,7 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BOJ5557.cpp" />
+    <ClCompile Include="BOJ2293.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Text.txt" />
