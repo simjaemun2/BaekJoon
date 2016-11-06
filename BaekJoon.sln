@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BOJ13260", "BOJ13260\BOJ132
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BOJ5582", "BOJ5582\BOJ5582.vcxproj", "{6D6450BC-7A1B-46EB-A7F3-C3FC87DECE3B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BOJ1958", "BOJ1958\BOJ1958.vcxproj", "{A831B700-6C32-4470-BDD2-35C40EC0468D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{6D6450BC-7A1B-46EB-A7F3-C3FC87DECE3B}.Release|x64.Build.0 = Release|x64
 		{6D6450BC-7A1B-46EB-A7F3-C3FC87DECE3B}.Release|x86.ActiveCfg = Release|Win32
 		{6D6450BC-7A1B-46EB-A7F3-C3FC87DECE3B}.Release|x86.Build.0 = Release|Win32
+		{A831B700-6C32-4470-BDD2-35C40EC0468D}.Debug|x64.ActiveCfg = Debug|x64
+		{A831B700-6C32-4470-BDD2-35C40EC0468D}.Debug|x64.Build.0 = Debug|x64
+		{A831B700-6C32-4470-BDD2-35C40EC0468D}.Debug|x86.ActiveCfg = Debug|Win32
+		{A831B700-6C32-4470-BDD2-35C40EC0468D}.Debug|x86.Build.0 = Debug|Win32
+		{A831B700-6C32-4470-BDD2-35C40EC0468D}.Release|x64.ActiveCfg = Release|x64
+		{A831B700-6C32-4470-BDD2-35C40EC0468D}.Release|x64.Build.0 = Release|x64
+		{A831B700-6C32-4470-BDD2-35C40EC0468D}.Release|x86.ActiveCfg = Release|Win32
+		{A831B700-6C32-4470-BDD2-35C40EC0468D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
