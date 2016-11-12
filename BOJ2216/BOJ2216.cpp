@@ -48,9 +48,16 @@ int main(int argc, char** argv)
 		{
 			for (int x = 1; x <= lenX; x++)
 			{
-				cache[y][x] = (Y[y - 1] == X[x - 1] ? A : C) + cache[y - 1][x - 1];
-				cache[y][x] = max(cache[y][x], cache[y - 1][x] + B);
-				cache[y][x] = max(cache[y][x], cache[y][x - 1] + B);
+				if (Y[y - 1] == X[x - 1])
+				{
+					cache[y][x] = A + cache[y - 1][x - 1];
+				}
+				else
+				{
+					cache[y][x] = C+ cache[y - 1][x - 1];
+					cache[y][x] = max(cache[y][x], cache[y - 1][x] + B);
+					cache[y][x] = max(cache[y][x], cache[y][x - 1] + B);
+				}
 			}
 		}
 
