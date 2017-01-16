@@ -15,11 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BOJ1167.cpp">
+    <ClCompile Include="BOJ1707.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\BOJ_Basic\Text.txt" />
+    <Text Include="Text.txt" />
   </ItemGroup>
 </Project>
